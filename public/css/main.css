@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --white: #F6F1F1;
+    --cyan: #19A7CE;
+    --blue: #146C94;
+    --black: #000000;
+    --neon: #84D7EE;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    overflow: hidden;
+}
+
+#main{
+    background-image: url(../assets/business-woman-using-laptop_8595-1721\ 1.png);
+    height: 926px;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+}
+
+#main h1{
+    margin-top: 240px;
+    margin-left: 100px;
+    overflow: hidden;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-style: italic;
+    font-family: "Poppins";
+    font-size: 50px;
+}
+
+#about-us{
+    display: flex;
+    height: 80vh;
+}
+
+.about-image{
+    display: flex;
+    width: 2800px;
+}
+
+.about-image img{
+    overflow: hidden;
+    height: 80vh;
+    width: 100%;
+}
+
+.about-content{
+    background-color: var(--cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-content h1{
+    overflow: hidden;
+    font-family: "Poppins";
+    color: var(--white);
+    font-weight: bold;
+}
+
+.about-text{
+    padding-left: 50px;
+    margin-right: 50px;
+}
+
+.about-text p {
+    font-family: "Poppins";
+    line-height: 2;
+    color: var(--white);
+    text-align: justify;
+}
+
+.normal-one{
+    font-size: 18px;
+}
+
+.the-bold-one{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 23px;
+}
+
+#why{
+    height: 60vh;
+    background-color: #F6F1F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 80px;
+    padding-right: 80px;
+    gap: 60px;
+}
+
+#why h1{
+    overflow: hidden;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Poppins";
+    font-size: 50px;
+}
+
+#why p{
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 24px;
+}
+
+#main-point{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#main-point h1{
+    overflow: hidden;
+    color: white;
+}
+
+.quality, .convenience, .competitive{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    gap: 50px;
+}
+
+.quality{
+    background-color: black;
+}
+
+.convenience{
+    background-color: var(--neon);
+}
+
+.competitive{
+    background-color: var(--blue);
+}
+
+#main-point p{
+    color: white;
+    text-align: center;
+}
+
+.convenience h1, .competitive h1, .quality h1{
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#benefits{
+    display: flex;
+    flex-direction: row;
+    background-color: #F6F1F1;
+    /* height: 100vh; */
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.benefit-text{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin-left: 150px;
+    margin-right: 50px;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.benefit-text h1{
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.benefit-text p{
+    text-align: justify;
+    font-size: 20px;
+}
+
+.benefit-hexagon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.hex-top{
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+    overflow: hidden;
+    gap: 15px;
+}
+
+.hex-bottom{
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+    overflow: hidden;
+}
+
+.hex{
+    background: white;
+    -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 30%;
+    height: 300px;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.hex h3{
+    text-align: center;
+    overflow: hidden;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hex p{
+    text-align: center;
+    font-size: 12px;
+}
+
+#location{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--blue);
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    gap: 200px;
+}
+
+.location-kiri{
+    display: flex;
+    flex-direction: column;
+}
+
+.location-kiri h3{
+    color: white;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.location-kiri p{
+    color: white;
+}
+
+.location-kanan{
+    display: flex;
+    justify-content: center;
+}
