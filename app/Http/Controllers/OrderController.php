@@ -18,7 +18,7 @@ class OrderController extends Controller
         $request->validate([
             'dateStart' => ['required', 'date', 'after_or_equal:'.now()->format('d-m-Y')],
             'jumlahHari' => ['required', 'integer', 'min:1'],
-            'specification' => ['required', 'string', 'in:Asisten Pribadi, Entri Data, Media Sosial, Customer Service, Phone & Emailing'],
+            'specification' => ['required', 'string', 'in:Asisten Pribadi,Entri Data,Media Sosial,Customer Service,Phone & Emailing'],
             'description' => ['required', 'max:500']
         ]);
 
