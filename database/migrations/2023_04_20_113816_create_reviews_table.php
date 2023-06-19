@@ -24,7 +24,7 @@ return new class extends Migration
                             ->onUpdate('cascade')
                             ->onDelete('cascade');
             $table->unsignedBigInteger('assistant_id');
-            $table->foreign('assistant_id')->references('id')->on('assistants')
+            $table->foreign('assistant_id')->references('id')->on('users')
                             ->onUpdate('cascade')
                             ->onDelete('cascade');
             $table->date('reviewDate');

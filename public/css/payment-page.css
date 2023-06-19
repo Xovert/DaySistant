@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --white: #F6F1F1;
+    --cyan: #19A7CE;
+    --blue: #146C94;
+    --black: #000000;
+    --neon: #84D7EE;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+
+h2{
+    overflow: hidden;
+}
+
+#payment{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    background-color: var(--cyan);
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.payment-content{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.payment-left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 600px;
+}
+
+.payment-method{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.payment-row{
+    display: flex;
+    gap: 65px;
+}
+
+.payment-method-button{
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid var(--black);
+    width: 170px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 600px;
+    background-color: #F6F1F1;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+label{
+    text-align: end;
+    font-size: 20px;
+}
+
+p{
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+#payment-final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cyan);
+    height: 90vh;
+    gap: 200px;
+}

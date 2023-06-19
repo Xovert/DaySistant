@@ -17,13 +17,6 @@ h1{
     overflow: hidden;
 }
 
-#Register{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 120vh;
-}
-
 .register-bg{
     background: url(../assets/RegisterBg.jpg);
     background-size: cover;
@@ -217,4 +210,66 @@ hr{
     text-decoration-line: underline;
     color: rgb(252, 181, 15);
     font-weight: bold;
+}
+
+#Register .row2{
+    display: flex;
+    flex-direction: column;
+    width: 850px;
+    gap: 50px;
+}
+
+#Register{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    background-color: var(--cyan);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#Register .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Register h1{
+    text-align: center;
+    overflow: hidden;
+    color: var(--white);
+}
+
+#Register h3{
+    overflow: hidden;
+    color: var(--white);
+}
+
+#Register hr{
+    width: 790px;
+}
+
+#Register form{
+    gap: 20px;
+    background-color: var(--blue);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+form label{
+    color: var(--white);
+}
+
+.bottom-reg p{
+    text-align: end;
+}
+
+.bottom-reg a{
+    color: var(--white);
+}
+
+#Register .btn{
+    border-radius: 50px;
+    width: 110px;
 }

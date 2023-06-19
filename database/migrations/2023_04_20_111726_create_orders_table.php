@@ -30,10 +30,11 @@ return new class extends Migration
             //                 ->onDelete('cascade');
 
             $table->date('orderDate');
-            $table->string('status')->nullable();
-            $table->date('startDate')->nullable();
-            $table->date('endDate')->nullable();
-            $table->string('specifiation')->nullable();
+            $table->string('status')->default("Not Accepted");
+            $table->date('startDate');
+            $table->date('endDate');
+            $table->string('specification');
+            $table->string('description');
             $table->timestamps();
         });
     }

@@ -21,8 +21,12 @@ a{
     color: black;
 }
 
+a:hover{
+    color: var(--neon);
+}
+
 .navbar-head{
-    background-color: var(--cyan);
+    background-color: var(--blue);
     padding: 20px;
 }
 
@@ -52,6 +56,47 @@ a{
 .button-container{
     display: flex;
     gap: 20px;
+}
+
+.nav-right{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.profile-content{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logged-in #assistant{
+    display: flex;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    gap: 20px;
+}
+
+.profile #profile-icon{
+    padding-top: 3px;
+    padding-left: 2.5px;
+}
+
+.logged-in #assistant{
+    padding-top: 6.5px;
+}
+
+.profile{
+    display:flex;
+}
+
+.vertical-line{
+    display: inline-block;
+    border-left: 1px solid;
+    margin: 0 10px;
+    height: 50px;
 }
 
 footer{

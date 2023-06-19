@@ -71,7 +71,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nulla reprehenderit rerum distinctio dolore, vero inventore nisi ullam officiis architecto iusto enim dignissimos! Inventore odit magni dolorem corporis corrupti laborum?</p>
         </div>
         <div class="location-kanan">
-            <img src="{{asset('assets/icon _location pin_.png')}}" alt="">
+            <img src="{{asset('assets/icon _location pin_.png')}}" alt="logo-location">
         </div>
     </section>
 @endsection

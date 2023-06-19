@@ -32,6 +32,18 @@ class User extends Authenticatable
         'role'
     ];
 
+    public function orderCustomer(){
+        return $this->hasMany(Order::class, 'customer_id');
+    }
+
+    public function orderAssistant(){
+        return $this->hasMany(Order::class, 'assistant_id');
+    }
+
+    public function payment(){
+        return $this->hasMany(Payment::class, 'customer_id');
+    }
+
     /**
      * The attributes that should be hidden for serialization.
      *
