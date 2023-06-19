@@ -29,8 +29,7 @@ Route::get('/faq', function(){
 
 Route::get('/faq',[QuestionController::class, 'getFAQPage'])->name('faq');
 Route::get('/submit-faq',[QuestionController::class, 'getSubmitFAQ'])->name('submitFAQ');
-Route::get('/faq-final', [QuestionController::class, 'getFAQFinal'])->name('faqFinal');
-
+Route::post('/faq-final', [QuestionController::class, 'createQuestion'])->name('faqFinal');
 // Route::get('/assistant', function() {
 //     return view('assistant');
 // });

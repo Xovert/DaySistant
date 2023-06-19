@@ -77,7 +77,7 @@
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Address</label>
                         <textarea type="text" name="address" class="form-control" id="exampleInputEmail1"
-                            aria-describedby="emailHelp" value="{{old('address')}}"></textarea>
+                            aria-describedby="emailHelp" value="{{old('address')}}" placeholder="e.g. 356 August Lane, Louisiana 71301"></textarea>
                     </div>
                     @error('address')
                     <div class="alert alert-danger">{{ $message }}</div>
@@ -85,7 +85,7 @@
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Phone Number</label>
                         <input type="number" name="phone" class="form-control" id="exampleInputEmail1"
-                            aria-describedby="emailHelp" value="{{old('phone')}}">
+                            aria-describedby="emailHelp" value="{{old('phone')}}" placeholder="011122224444">
                     </div>
                     @error('phone')
                     <div class="alert alert-danger">{{ $message }}</div>
@@ -93,7 +93,7 @@
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email address</label>
                         <input type="email" name="email" class="form-control" id="exampleInputEmail1"
-                            aria-describedby="emailHelp" value="{{old('email')}}">
+                            aria-describedby="emailHelp" value="{{old('email')}}" placeholder="example@gmail.com">
                     </div>
                     @error('email')
                     <div class="alert alert-danger">{{ $message }}</div>

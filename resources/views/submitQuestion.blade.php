@@ -7,8 +7,7 @@
 @section('content')
 <section id="form-kerja">
     <div class="container">
-        
-            <form action="{{route('faqFinal')}}" method="GET" enctype="multipart/form-data">
+            <form action="{{route('faqFinal')}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <h1 style="overflow: hidden" class="mb-5">Question Form</h1>
                 <div class="mb-3">
@@ -17,11 +16,17 @@
                         <input type="text" name="title" class="form-control" id="inputPassword" placeholder="Masukkan judul pertanyaan">
                     </div>
                 </div>
+                @error('title')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Description :</label>
                   <textarea type="text" name="deskripsi" class="form-control" id="exampleInputEmail1"
-                      aria-describedby="emailHelp" value="{{old('deskripsi')}}" rows="8">Masukkan deskripsi pertanyaan yang anda ingin tanyakan di sini</textarea>
+                      aria-describedby="emailHelp" value="{{old('deskripsi')}}" rows="8", placeholder="Masukkan deskripsi pertanyaan yang anda ingin tanyakan di sini"></textarea>
                 </div>
+                @error('deskripsi')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="check" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">

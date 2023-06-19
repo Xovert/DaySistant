@@ -27,7 +27,7 @@ class UserController extends Controller
         $request->validate([
             'username' => ['required', 'string', 'max:255'],
             'fullname' => ['required', 'string', 'max:510'],
-            'dob' => ['required'],
+            'dob' => ['required', 'date', 'before_or_equal:'.now()->subYears(18)->format('Y-m-d')],
             'address' => ['required', 'string', 'max:255'],
             'phone' => ['required'],
             'email' => ['required', 'string', 'email', 'max:255'],

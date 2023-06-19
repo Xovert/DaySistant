@@ -16,9 +16,9 @@ class OrderController extends Controller
     public function createOrder(Request $request){
 
         $request->validate([
-            'dateStart' => ['required'],
-            'jumlahHari' => ['required', 'min_digits:1'],
-            'specification' => ['required'],
+            'dateStart' => ['required', 'date', 'after_or_equal:'.now()->format('d-m-Y')],
+            'jumlahHari' => ['required', 'integer', 'min:1'],
+            'specification' => ['required', 'string', 'in:Asisten Pribadi, Entri Data, Media Sosial, Customer Service, Phone & Emailing'],
             'description' => ['required', 'max:500']
         ]);
 

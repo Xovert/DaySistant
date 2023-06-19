@@ -6,6 +6,15 @@ use Illuminate\Http\Request;
 
 class QuestionController extends Controller
 {
+    public function createQuestion(Request $request){
+        $request->validate([
+            'title'=> ['required'],
+            'deskripsi'=> ['required'],
+        ]);
+
+        return view('faq-final');
+    }
+    
     public function getFAQPage(){
         return view('faq');
     }

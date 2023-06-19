@@ -20,24 +20,25 @@
     </div>
     <button class="accordion">Can I cancel my transaction ?</button>
     <div class="panel">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates adipisci deserunt asperiores delectus
-            repellat magni!</p>
+        <p>Yes, you can!</p>
     </div>
-    <button class="accordion">How do I track my Virtual Assistant work ?</button>
+    <button class="accordion">How do I track my <i>Virtual Assistant</i> work ?</button>
     <div class="panel">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates adipisci deserunt asperiores delectus
-            repellat magni!</p>
+        <p>Your Virtual Assistant progress will be displayed in the History as Status.<br>
+            <br>
+            Status :<br>
+            In Progress : This status indicate that your virtual assistant is currently working on your order.<br>
+            Cancelled : This status indicate that your order has been cancelled by your virtual assistant with our permission.<br>
+            Done : This status indicate that your order has been completed.</p>
     </div>
     <button class="accordion">Can I change my choice of Virtual Assistant ?</button>
     <div class="panel">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates adipisci deserunt asperiores delectus
-            repellat magni!</p>
+        <p>No, you cannot :^&#41;</p>
     </div>
     <button class="accordion">Can I reschedule my transaction ?</button>
     <div class="panel">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates adipisci deserunt asperiores delectus
-            repellat magni!</p>
+        <p>No, you cannot :^&#41;</p>
     </div>
-    <h4 style="text-align: center; margin-top: 40px; overflow: hidden;">Your Question is not here? <a href="{{route('submitFAQ')}}" style="color: #09B1E6">Click here</a></h4>
+    <h4 style="text-align: center; margin-top: 40px; overflow: hidden;">Your Question is not here? <a href="{{route('submitFAQ')}}" style="color: #09B1E6">Click here!</a></h4>
 </section>
 @endsection

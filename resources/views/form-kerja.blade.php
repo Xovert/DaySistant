@@ -17,6 +17,9 @@
                         <select name="specification" class="form-select" id="inlineFormSelectPref">
                             <option selected>Pilih Pekerjaan</option>
                             <option value="Asisten Pribadi">Asisten Pribadi</option>
+                            <option value="Entri Data">Entri Data</option>
+                            <option value="Media Sosial">Media Sosial</option>
+                            <option value="Customer Service">Customer Service</option>
                             <option value="Phone & Emailing">Phone & Emailing</option>
                         </select>
                     </div>
@@ -45,7 +48,7 @@
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Deskripsi Pekerjaan :</label>
                   <textarea type="text" name="description" class="form-control" id="exampleInputEmail1"
-                      aria-describedby="emailHelp" value="{{old('description')}}" rows="8">Masukkan deskripsi pekerjaan yang anda inginkan di sini</textarea>
+                      aria-describedby="emailHelp" value="{{old('description')}}" rows="8" placeholder="Masukkan deskripsi pekerjaan yang anda inginkan di sini"></textarea>
                 </div>
                 @error('description')
                 <div class="alert alert-danger">{{ $message }}</div>
